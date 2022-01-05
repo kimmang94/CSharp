@@ -1,0 +1,24 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class HelloWorld
+    {
+        static void Main(string[] args)
+        {
+            int a = 1;
+            int b = 2;
+            int c = 3;
+            int d = 4;
+            
+            sumAB = a + b;
+            sumCD = c + d;
+            minusAB = a - b;
+            minusCD = c - d;
+            mulAB = a * b;
+            mulCD = c * d;
+            divAB = a / b;
+            divcd = c / d;
+        }
+    }
+}
