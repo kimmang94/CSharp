@@ -1,0 +1,17 @@
+  f(n) = n * (n-1)
+  //단, f(1) = 1
+
+public int FuncFactorial(int nNumber)
+{
+	int nResult = 0;
+    
+    if(nNumber == 1)
+    {
+    	nResult = 1;
+    }
+    else
+    {
+    	nResult = nNumber * FuncFactorial(nNumber - 1);
+    }
+    return nResult;
+}
