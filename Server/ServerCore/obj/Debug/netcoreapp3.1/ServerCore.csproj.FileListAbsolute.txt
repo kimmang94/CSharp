@@ -1,0 +1,14 @@
+C:\Server\ServerCore\bin\Debug\netcoreapp3.1\ServerCore.exe
+C:\Server\ServerCore\bin\Debug\netcoreapp3.1\ServerCore.deps.json
+C:\Server\ServerCore\bin\Debug\netcoreapp3.1\ServerCore.runtimeconfig.json
+C:\Server\ServerCore\bin\Debug\netcoreapp3.1\ServerCore.runtimeconfig.dev.json
+C:\Server\ServerCore\bin\Debug\netcoreapp3.1\ServerCore.dll
+C:\Server\ServerCore\bin\Debug\netcoreapp3.1\ServerCore.pdb
+C:\Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.csproj.AssemblyReference.cache
+C:\Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.AssemblyInfoInputs.cache
+C:\Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.AssemblyInfo.cs
+C:\Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.csproj.CoreCompileInputs.cache
+C:\Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.dll
+C:\Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.pdb
+C:\Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.genruntimeconfig.cache
