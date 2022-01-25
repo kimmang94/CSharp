@@ -1,0 +1,41 @@
+using System;
+
+namespace CSharp_basic
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /* while 반복문
+            int count = 5;
+
+            // 조건을 제대로 하지 않으면 무한루프에 빠지게된다.
+            while (count > 0)
+            {
+                Console.WriteLine("Hello World!");
+                count--;
+            }
+
+            do
+            {
+                Console.WriteLine("Hello World Start!");
+            } while (count > 0);
+            {
+                Console.WriteLine("Hello World");
+                count--;
+            };
+            */
+
+            // 거울아 거울아
+            string answer;
+            do
+            {
+                Console.WriteLine("코딩은 재밌나요? (Y/N)");
+                answer = Console.ReadLine();
+            } while (answer != "Y");
+
+            Console.WriteLine("다행이군요!");
+        }
+
+    }
+}
