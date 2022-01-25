@@ -1,0 +1,90 @@
+using System;
+
+namespace CSharp_basic
+{
+    class Program
+    {
+        // Function (함수): 코드를 재사용하기 용이하게 묶는 용도, Method, Function, Procedure 등 여러 용어로쓰인다
+        // 심도깊게 본다면 조금 다르지만 게임업계에서는 대개 Function 으로 불린다.
+
+        /*
+         함수 정의
+
+         한정자 반환형식 함수명(매개변수 목록)
+         {
+
+         }
+
+          
+         */
+
+        static void HelloWorld()
+        {
+            Console.WriteLine("Hello World !");
+        }
+
+        static int Add(int a, int b)
+        {
+            int result = a + b;
+            Console.WriteLine($"더한 값은 : {result} 입니다");
+            return result;
+        }
+
+        static int Minus(int a, int b)
+        {
+            int result = a - b;
+            Console.WriteLine($"뺀 값은 : {result} 입니다");
+            return result;
+        }
+        static int Multiple(int a, int b)
+        {
+            int result = a * b;
+            Console.WriteLine($"곱한 값은 : {result} 입니다");
+            return result;
+        }
+
+        static int Divide(int a, int b)
+        {
+            int result = a / b;
+            int d = a % b;
+            Console.WriteLine($"나눈 값은 : {result} 입니다, 나머지는 {d} 입니다");
+            return result;
+        }
+
+        static void Main(string[] args)
+        {
+
+            while (true)
+            {
+                Console.WriteLine("첫번째 값을 입력해 주세요");
+                int a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("연산자를 선택해주세요");
+                char func = Convert.ToChar(Console.ReadLine());
+                Console.WriteLine("두번째 값을 입력해 주세요");
+                int b = Convert.ToInt32(Console.ReadLine());
+
+                Operator(a, func, b);
+            }
+        }
+
+        private static void Operator(int a, char func, int b)
+        {
+            if (func == '+')
+            {
+                Add(a, b);
+            }
+            else if (func == '-')
+            {
+                Minus(a, b);
+            }
+            else if (func == '*')
+            {
+                Multiple(a, b);
+            }
+            else if (func == '/')
+            {
+                Divide(a, b);
+            }
+        }
+    }
+}
