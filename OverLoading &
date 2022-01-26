@@ -1,0 +1,41 @@
+using System;
+
+namespace CSharp_basic
+{
+    class Program
+    {
+        // 함수 이름의 재사용 ( 오버로딩 )
+        // 같은 이름을 사용하되 같은매개변수타입, 갯수가 같으면 안된다.
+        // 반환형식은 크게 영향을 주지 않는다
+        static int Add(int a, int b)
+        {
+            Console.WriteLine("Add int 호출");
+            return a + b;
+        }
+
+        static float Add(float a, float b)
+        {
+            Console.WriteLine("Add float 호출");
+            return a + b;
+        }
+
+        // 선택적 매개변수
+        // 최소 인자 2개, 3번째인자 옵션 입력값이 없다면 기본값 : 0
+        static float Add(float a, float b, float c = 0)
+        {
+            Console.WriteLine("Add float 호출");
+            return a + b;
+        }
+
+        static void Main(string[] args)
+        {
+            int ret =  Add(2, 4);
+            Console.WriteLine(ret);
+
+            float ret2 = Add(2.0f, 3.0f);
+            Console.WriteLine(ret2);
+
+        }
+
+    }
+}
