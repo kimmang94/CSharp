@@ -1,0 +1,41 @@
+using System;
+
+namespace CSharp_basic
+{
+    class Program
+    {
+       
+        static int Factorial(int n)
+        {
+            int ret = 1;
+            for (int num = 1; num <= n; num++)
+            {
+                
+                ret *= num;
+            }
+            return ret;
+        }
+        // 재귀함수 (자기자신을 반복해서 호출)
+        static int FactorialEx(int n)
+        {
+            // 5! = 5 * 4!
+            if (n <= 1)
+                return 1;
+            return n * FactorialEx(n - 1);
+        }
+
+        static void Main(string[] args)
+        {
+            // Factorial
+
+            // 5! = 5 * 4 * 3 * 2 * 1
+            int ret = Factorial(5);
+            Console.WriteLine(ret);
+
+            int ret2 = FactorialEx(5);
+            Console.WriteLine(ret2);
+                
+        }
+
+    }
+}
