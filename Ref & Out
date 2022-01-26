@@ -1,0 +1,52 @@
+using System;
+
+namespace CSharp_basic
+{
+    class Program
+    {
+        static void AddOne(ref int number)
+        {
+            number += 1;
+        }
+
+        static int AddOne1(int number)
+        {
+            int result = number += 1;
+            return result;
+        }
+        // int 반환과 void ref 반환의차이
+        
+        static void AddTwo( int number)
+        {
+            number += 1;
+        }
+
+        static void Divide(int a, int b, out int result1, out int result2)
+        {
+            result1 = a / b;
+            result2 = a % b;
+        }
+        static void Main(string[] args)
+        {
+
+
+            int a = 0;
+            int b = 0;
+            AddOne(ref a); // ref 를 이용해 참조(리터럴 자체값) 변경
+            AddTwo(b);// 복사를 통해 AddTwo 함수 내부에서만 변경
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+
+            int num1 = 10;
+            int num2 = 3;
+
+            int result1;
+            int result2;
+            Divide(10, 3, out result1,out result2);
+
+            Console.WriteLine(result1);
+            Console.WriteLine(result2);
+        }
+
+    }
+}
