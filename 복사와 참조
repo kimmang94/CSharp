@@ -1,0 +1,87 @@
+using System;
+
+namespace CSharp_basic
+{
+    class Program
+    {
+        // 절차(Procedure : 함수기반) 지향
+        // 유지보수가 힘들다
+        // 심플하고 직관적 이지만 프로그램이 복잡해질 수록 유지보수가 어렵다(로직이 꼬일수 있다)
+
+        // 객체(OOP Object Oriented Programming) 지향  
+        // 객체 설계
+
+        // Knight 
+        // 속성 : hp, attack, pos ...
+        // 기능 : Move, Attack, Die ...
+
+
+        // 참조
+        class Knight
+        {
+            public int hp;
+            public int attack;
+
+            public Knight Clone()
+            {
+                Knight knight = new Knight();
+                knight.hp = hp;
+                knight.attack = attack;
+                return knight;
+            }
+
+            public void Move()
+            {
+                Console.WriteLine("Knignt Move!");
+            }
+
+            public void Attack()
+            {
+                Console.WriteLine("Knight Attack!");
+            }
+        }
+
+        // 복사
+        struct Mage
+        {
+            public int hp;
+            public int attack;
+        }
+
+        static void KillMage(Mage mage)
+        {
+            mage.hp = 0;
+        }
+
+        static void KillKnight(Knight knignt)
+        {
+            knignt.hp = 0;
+        }
+        static void Main(string[] args)
+        {
+            
+            Knight knight = new Knight();
+
+            knight.hp = 100;
+            knight.attack = 10;
+
+            knight.Move();
+            knight.Attack();
+            KillKnight(knight);
+            Knight knight2 = new Knight();
+            knight2.hp = 0;
+            
+            Mage mage;
+            mage.hp = 100;
+            mage.attack = 50;
+            KillMage(mage);
+            Mage mage2 = mage;
+            mage2.hp = 0;
+
+            Knight knight3 = knight.Clone();
+            knight3.hp = 10;
+
+        }
+
+    }
+}
