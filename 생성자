@@ -1,0 +1,52 @@
+using System;
+
+namespace CSharp_basic
+{
+    class Program
+    {
+        class Knight
+        {
+            public int hp;
+            public int attack;
+
+            public Knight()
+            {
+                hp = 100;
+                attack = 10;
+                Console.WriteLine("생성자 호출!");
+            }
+
+            public Knight(int hp) : this()
+            {
+                this.hp = hp;
+                Console.WriteLine("int hp 생성자 호출!");
+
+            }
+            public Knight Clone()
+            {
+                Knight knight = new Knight();
+                knight.hp = hp;
+                knight.attack = attack;
+                return knight;
+            }
+
+            public void Move()
+            {
+                Console.WriteLine("Knignt Move!");
+            }
+
+            public void Attack()
+            {
+                Console.WriteLine("Knight Attack!");
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            
+            Knight knight = new Knight();
+            Knight knight1 = new Knight(10);
+        }
+
+    }
+}
