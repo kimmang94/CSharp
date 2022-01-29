@@ -1,0 +1,53 @@
+using System;
+
+namespace CSharp_basic
+{
+    class Program
+    {
+        static int GetHighestScore(int[] scores)
+        {
+            int maxValuie = 0;
+            foreach (int score in scores)
+            {
+                if (score > maxValuie)
+                {
+                    maxValuie = score;
+                }
+            }
+            return maxValuie;
+        }
+
+        static int GetAverageScore(int[] scores)
+        {
+            int sumValue = 0;
+            int average = 0 ;
+            foreach (int score in scores)
+            {
+                sumValue += score;
+                average = sumValue / scores.Length;
+            }
+            if (scores.Length == 0)
+                return 0;
+
+            return average;
+        }
+
+        static int GetIndexOf(int[] scores, int value)
+        {
+            return -1;
+        }
+
+        static void Sort(int[] scores)
+        {
+
+        }
+
+        static void Main(string[] args)
+        {
+            int[] scores = new int[5] { 10, 30, 40, 20, 50 };
+            Console.WriteLine(GetHighestScore(scores));
+            Console.WriteLine(GetAverageScore(scores));
+        }
+
+    }
+}
