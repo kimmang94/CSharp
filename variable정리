@@ -1,0 +1,21 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // 변수(Variable) : 값 (Value) 이 할당되는 이름
+            // gold = 1000
+            // int(정수형), float(실수형), string(문자열), char(문자)
+            
+            // 함수(Function) : 미리 정해진 동작을 수행하는 코드 묶음
+            // public int Add(int a, int b)
+            // {
+            //      return a + b;
+            // }
+
+        }
+    }
+}
